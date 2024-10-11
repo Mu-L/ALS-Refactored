@@ -34,6 +34,7 @@ public:
 	uint8 bInheritMovementBaseRotationInVelocityDirectionRotationMode : 1 {false};
 
 	// If checked, the character will rotate towards the direction they want to move, but is not always able to due to obstacles.
+	// This setting is only used if the bIgnoreBaseRotation setting from the character movement component is set to true.
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Settings")
 	uint8 bRotateTowardsDesiredVelocityInVelocityDirectionRotationMode : 1 {true};
 
